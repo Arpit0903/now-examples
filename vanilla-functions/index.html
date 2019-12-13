@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Vanilla + Go API</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Welcome to a Static Site with Data from a Go API</h1>
-    <h2>
-      Deployed with
-      <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener"
-        >ZEIT Now</a
-      >!
-    </h2>
-    <p>
-      <a
-        href="https://github.com/zeit/now-examples/blob/master/vanilla-functions"
-        target="_blank"
-        rel="noreferrer noopener"
-        >This project</a
-      >
-      includes three files. A static <code>index.html</code> file as the
-      homepage, a static <code>style.css</code> file for styling, and a
-      <code>api/date.go</code> serverless function that returns the date on
-      invocation. See
-      <a href="/api/date.go"
-        ><code>api/date.go</code> for the Date API with Go</a
-      >.
-    </p>
-    <br />
-    <h3>The date according to Go is:</h3>
-    <p class="date">Loading date...</p>
-    <script>
-      function main() {
-        return fetch('/api/date.go')
-          .then(function(response) {
-            return response.text();
-          })
-          .then(function(date) {
-            document.querySelector('.date').textContent = date;
-          });
-      }
-      main();
-    </script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Arpit Pokhriyal</title>
+</head>
+<body>
+    <div class="btn">
+        <a href="/RESUME.pdf" target="_blank"><button><i class="fa fa-download"> Resume</i></button></a>
+    </div>
+    <div class="grid-2">
+        <div class="section-1">
+            <img src="./IMG_9946.JPG" height="200" width="200">
+            <!--<i class="fas fa-code fa-5x white"></i>-->
+            <h2>Arpit Pokhriyal</h2>
+            <p>New Delhi,India.</p>
+            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG4ARmZEpQ11AAAAW5KCgUosk95-YN7mhRylYEbSvLt-8KIH_HgldZ7i5O4hWJ4GqeyBBfzmSwYvdHMKqLr04mNziSzFvgX7sAfoDrk-qgidcfRAmElQI4Vn1M6hm7OADrmr88=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Farpit-pokhriyal-32637717a"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/arpit0903"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="section-2">
+            <h2>About</h2>
+            <p>I am a student, currently pursuing Bachelor of Technology in Computer Science from GGSIPU. I am a Machine Learning neophyte and a web developer.</p>
+            <h2>Skills</h2>
+            <p>Framework(s): Flask</p></p>
+            <p>Programming Language(s):  Python | HTML | CSS | C/C++</p>
+            <h2>Projects</h2>
+            <a href="https://github.com/Arpit0903/weatherapp">1. Weather App.</a>
+            <p>A weather forecasting web app using GoogleMapAPI and flask framework.</p>
+            <a href="https://github.com/Arpit0903/IrisPredictor">2. Iris Predictor.</a>
+            <p>Iris Prediction Web App which predicts the species of different iris flowers using KNN.</p>
+            <a href="https://github.com/Arpit0903/HeartDiseasePredictionModel_LogisticRegression">3. Heart Disease Predictor.</a>
+            <p>Heart Disease Prediction which predicts the heart disease of a patient based on multiple factors using Logistic Regression.</p>
+            <a href="https://github.com/Arpit0903/MNIST-Handwritten-Digit-Recognizer">4. Digit Classifier.</a>
+            <p>MNIST Handwritten Digit Classifier using Deep Neural Networks.</p>
+            <h2>Contact</h2></p>
+            <p>arpit.pokhriyal2000@gmail.com</p>
+        </div>
+    </div>
+</body>
 </html>
